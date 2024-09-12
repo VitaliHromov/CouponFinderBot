@@ -1,12 +1,13 @@
 # Основной файл, запускающий бота
 
-
 # Импортируем необходимые модули из библиотеки python-telegram-bot
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
+from dotenv import load_dotenv
+import os
 
-# Вставьте сюда свой токен
-TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+load_dotenv()
+telegram_token = os.getenv("TELEGRAM_TOKEN")
 
 # Функция-обработчик команды /start
 def start(update: Update, context: CallbackContext) -> None:
