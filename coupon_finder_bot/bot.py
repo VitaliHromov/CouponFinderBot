@@ -6,8 +6,7 @@ from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
 # Вставьте сюда свой токен
-TOKEN = '7408530575:AAFjhGEUTReWcd2T14EJtc3Nb9nUn2SA8PM'
-
+TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
 
 # Функция-обработчик команды /start
 def start(update: Update, context: CallbackContext) -> None:
