@@ -1,1 +1,3 @@
 # Конфигурационные параметры
+DISCORD_TOKEN = 'YOUR_DISCORD_TOKEN'
+PARTNER_API_KEY = 'YOUR_PARTNER_API_KEY'
